@@ -12,6 +12,6 @@ and displays the scores
 Given a working interface
 And updated score card
 
-When final scores recieved
+When final scores received
 
 Then compare scores and declare the winner

@@ -2,7 +2,6 @@
 
 ## Startup Sequence
 
-sequenceDiagram
   create-new-game->>+create-new-game: set background UI
   create-new-game->>+create-new-game: set initial ball position and direction
   create-new-game->>+create-new-game: set paddles' positions
@@ -13,7 +12,6 @@ sequenceDiagram
 
 ## Movement Initiation
 
-sequenceDiagram
   launch-game->>+set-paddle-position: random() direction
   set-paddle-position->>+check-collision: moves paddle
   check-collision->>+set-ball-direction: computes the new direction
@@ -22,7 +20,6 @@ sequenceDiagram
 
 ## One score
 
-sequenceDiagram
   set-ball-direction->>+check-collision: change ball direction
   check-collision->>+update-score-card: detect current player
   update-score-card->>+set-ball-direction: increment score

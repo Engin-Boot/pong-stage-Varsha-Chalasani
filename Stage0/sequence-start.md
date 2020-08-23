@@ -7,8 +7,8 @@ sequenceDiagram
   create-new-game->>+create-new-game: set initial ball position and direction
   create-new-game->>+create-new-game: set paddles' positions
   create-new-game->>+take-player-name: update UI
-  take-player-name->>+create-new-game: stores player's name   
-  create-new-game->>+launch-game: click 'start' 
+  take-player-name->>+create-new-game: stores player's name
+  create-new-game->>+launch-game: click 'start'
   launch-game->>+launch-game: 3 second timer
 
 ## Movement Initiation

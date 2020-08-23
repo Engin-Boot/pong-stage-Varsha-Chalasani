@@ -9,7 +9,7 @@ and player bars.
 
 ## Acceptance Criteria
 
-### Scenario: Starting a new game.
+### Scenario: Starting a new game
 
   Given A funtional UI
   And a 'New Game' button.

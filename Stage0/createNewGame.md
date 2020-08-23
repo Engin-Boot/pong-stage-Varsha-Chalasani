@@ -11,7 +11,7 @@ and player bars.
 
 ### Scenario: Starting a new game
 
-  Given A funtional UI
+  Given a working user interface
   And a 'New Game' button.
 
   When 'New Game' button is clicked

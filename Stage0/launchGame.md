@@ -7,8 +7,7 @@ launches the game after a 3 seconds timer.
 
 ## Acceptance Criteria
 
-### Scenario: Starting the game after storing
-the player details
+### Scenario: Starting the game after storing the player details
 
 Given a working interface
 And player names set
@@ -18,8 +17,7 @@ When on clicking 'Start Game' button
 Then start the game after a 3 seconds
 timer lapses.
 
-### Scenario: Ball movement after the timer
-lapses
+### Scenario: Ball movement after the timer lapses
 
 Given a working interface
 And the initial 3 second timer has lapsed

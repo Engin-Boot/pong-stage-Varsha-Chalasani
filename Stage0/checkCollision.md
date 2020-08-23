@@ -17,7 +17,7 @@ When ball collided with paddle
 
 Then increment score of relevant player
 
-### Scenario: Ball does'nt collide with paddle
+### Scenario: Ball doesn't collide with paddle
 
 Given a working interface
 And current player name

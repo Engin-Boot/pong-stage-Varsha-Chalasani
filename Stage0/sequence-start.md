@@ -19,7 +19,7 @@ sequenceDiagram
   check-collision->>+set-ball-direction: computes the new direction
   check-collision->>+declare-winner: collision with boundary
   set-ball-direction->>+set-paddle-position: change ball direction
- 
+
 ## One score
 
 sequenceDiagram

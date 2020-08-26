@@ -19,7 +19,6 @@
   check-collision->>+declare-winner: collision with boundary (noCollisionCount>=4)
   set-ball-direction->>+set-paddle-position: change ball direction
 
-
 ## One score
 
   set-ball-direction->>+check-collision: change ball direction

@@ -13,7 +13,8 @@ Given a working interface
 And current player name
 And players' current score
 
-When ball collides with boundary
+When one player's no-Collision-Count
+greater than 3
 
 Then increment no-Collision-Count
 And check condition

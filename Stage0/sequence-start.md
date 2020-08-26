@@ -15,15 +15,17 @@
   launch-game->>+set-paddle-position: random() direction
   set-paddle-position->>+check-collision: moves paddle
   check-collision->>+set-ball-direction: computes the new direction
-  check-collision->>+declare-winner: collision with boundary
+  check-collision->>+set-ball-direction: computes the new direction (noCollisionCount<4)
+  check-collision->>+declare-winner: collision with boundary (noCollisionCount>=4)
   set-ball-direction->>+set-paddle-position: change ball direction
+
 
 ## One score
 
   set-ball-direction->>+check-collision: change ball direction
   check-collision->>+update-score-card: detect current player
   update-score-card->>+set-ball-direction: increment score
-  check-collision->>+declare-winner: end game
+  check-collision->>+declare-winner: end game (noCollisionCount>=4)
   declare-winner->>+update-score-card: request scores
   update-score-card->>+declare-winner: send scores
   declare-winner->>+declare-winner: display scores

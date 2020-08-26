@@ -16,7 +16,7 @@
   set-paddle-position->>+check-collision: moves paddle
   check-collision->>+set-ball-direction: computes the new direction
   check-collision->>+set-ball-direction: computes the new direction
-  (if collision occurs snd no-Collision-Count<4)
+  (if collision occurs and no-Collision-Count<4)
   check-collision->>+declare-winner: collision with boundary
   (if collision occurs and no-Collision-Count>=4)
   set-ball-direction->>+set-paddle-position: change ball direction

@@ -33,4 +33,4 @@ And players' current score
 
 When ball collides with boundary
 
-Then increment noCollisionCount and return scores
+Then increment no-Collision-Count and return scores

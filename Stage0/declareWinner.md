@@ -10,6 +10,8 @@ and displays the scores
 ### Scenario: Ball collides with player boundary
 
 Given a working interface
+And player one or two's noCollisionCount
+is greater than 3
 And updated score card
 
 When final scores received

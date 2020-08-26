@@ -7,24 +7,6 @@ the score card of players accordingly.
 
 ## Acceptance Criteria
 
-### Scenario: Player one's paddle collides with ball
-
-Given a working interface
-And player one current score
-
-When collision is detected
-
-Then update player one's score and return
-
-### Scenario: Player two's paddle collides with ball
-
-Given a working interface
-And player two current score
-
-When collision is detected
-
-Then update player two's score and return
-
 ### Scenario: Ball collides with player boundary
 
 Given a working interface
@@ -33,4 +15,5 @@ And players' current score
 
 When ball collides with boundary
 
-Then increment no-Collision-Count and return scores
+Then increment no-Collision-Count
+And check condition

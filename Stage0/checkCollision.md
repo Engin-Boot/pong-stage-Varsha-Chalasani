@@ -24,4 +24,4 @@ And current player name
 
 When ball collides with player boundary
 
-Then end game
+Then check noCollisionCount field in scorecard

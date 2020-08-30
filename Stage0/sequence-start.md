@@ -30,7 +30,7 @@
   set-ball-direction->>+set-ball-position: change ball direction
   set-ball-position->>+check-collision: moves ball
   check-collision->>+set-ball-direction: if collision occurs
-  check-collision->>+update-score-card: if collision does not occurt
+  check-collision->>+update-score-card: if collision does not occur
   update-score-card->>+set-ball-direction:
   increment counter, if no-Collision-Count<4
   update-score-card->>+declare-winner:

@@ -15,7 +15,7 @@ And paddle direction
 
 When player slides paddle
 
-Then updates paddle position continously
+Then updates paddle position continuously
 
 ### Scenario: Player releases paddle
 

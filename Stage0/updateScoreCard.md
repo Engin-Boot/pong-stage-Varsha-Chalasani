@@ -13,7 +13,7 @@ Given a working interface
 And current player name
 And players' current counters
 
-When ball misses collsion with paddle
+When ball misses collision with paddle
 
 Then increment no-Collision-Count
 And check condition

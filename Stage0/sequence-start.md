@@ -12,21 +12,28 @@
 
 ## Movement Initiation
 
-  launch-game->>+set-paddle-position: random() direction
-  set-paddle-position->>+check-collision: moves paddle
-  check-collision->>+set-ball-direction: computes the new direction
-  check-collision->>+set-ball-direction: computes the new direction
-  (if collision occurs and no-Collision-Count<4)
-  check-collision->>+declare-winner: collision with boundary
-  (if collision occurs and no-Collision-Count>=4)
-  set-ball-direction->>+set-paddle-position: change ball direction
+  launch-game->>+set-ball-position: random() direction
+  set-ball-position->>+update-paddle-status: moves ball
+  update-paddle-status->>+check-collision: moves paddle
+  check-collision->>+set-ball-direction:
+  (collision occurs, computes the new direction)
+  check-collision->>+update-score-card:
+  (collision misses, computes the new direction)
+  update-score-card->>+set-ball-direction:
+  (increments counter, no-collision-count<=3)
+  update-score-card->>+declare-winner:
+  (increments counter, no-Collision-Count>3)
+  set-ball-direction->>+set-ball-position: change ball direction
+					
 
 ## One score
 
-  set-ball-direction->>+check-collision: change ball direction
+  set-ball-direction->>+set-ball-position: change ball direction
+  set-ball-position->>+check-collision: moves ball
   check-collision->>+set-ball-direction: if collision occurs
-  check-collision->>+update-score-card:
-  if collision does not occur increment no-Collision-Count
-  update-score-card->>+set-ball-direction: if no-Collision-Count<4
-  update-score-card->>+declare-winner: if no-Collision-Count>=4
+  check-collision->>+update-score-card: if collision does not occurt
+  update-score-card->>+set-ball-direction:
+  increment counter, if no-Collision-Count<4
+  update-score-card->>+declare-winner:
+  increment counter, if no-Collision-Count>=4
   declare-winner->>+declare-winner: display scores

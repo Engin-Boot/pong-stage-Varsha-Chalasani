@@ -14,22 +14,22 @@ And direction of ball before it touches the paddle
 
 When the ball touches the paddle
 
-Then ball's direction is reset
+Then reset ball's direction
 
-### Scenario: Ball touches the other two boundaries
+### Scenario: Ball touches the horizontal boundaries
 
 Given a working interface
 And direction of ball before it touches the
 boundary
 
-When ball touches boundary
+When ball touches horizontal boundary
 
 Then reset the ball in appropriate direction
 
-### Scenario: Ball touches player boundary and not paddle
+### Scenario: Ball misses collision and no-Collision-Count less than 4
 
 Given a working interface
 
-When ball touches player boundary
+When ball touches vertical boundary
 
-Then end the game
+Then reset ball's direction

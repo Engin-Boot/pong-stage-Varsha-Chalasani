@@ -7,14 +7,25 @@ the score card of players accordingly.
 
 ## Acceptance Criteria
 
-### Scenario: Ball collides with player boundary
+### Scenario: Ball misses collision
 
 Given a working interface
 And current player name
-And players' current score
+And players' current counters
+
+When ball misses collsion with paddle
+
+Then increment no-Collision-Count
+And check condition
+
+### Scenario: Ball misses collision for more than thrice
+
+Given a working interface
+And current player name
+And players' current counters
 
 When one player's no-Collision-Count
 greater than 3
 
 Then increment no-Collision-Count
-And check condition
+And move to declare-winner module

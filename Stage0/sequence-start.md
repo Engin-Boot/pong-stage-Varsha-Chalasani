@@ -24,7 +24,6 @@
   update-score-card->>+declare-winner:
   (increments counter, no-Collision-Count>3)
   set-ball-direction->>+set-ball-position: change ball direction
-					
 
 ## One score
 
